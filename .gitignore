@@ -1,0 +1,5 @@
+//Add the node_modules folder to the .gitignore file
+node_modules
+//Add the environment file to the .gitignore file
+.env
+

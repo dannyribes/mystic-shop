@@ -4,6 +4,3 @@
   # Publish directory should be .next or a custom distDir set in next.config.js
   publish = ".next"
   command = "npm run build"  # or "pnpm run build" or "yarn build" depending on your package manager
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
