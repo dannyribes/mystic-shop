@@ -1,6 +1,12 @@
 [build]
   # Change to the correct base directory if needed
-  base = ""
+  #base = ""
   # Publish directory should be .next or a custom distDir set in next.config.js
-  publish = ".next"
-  command = "npm run build"  # or "pnpm run build" or "yarn build" depending on your package manager
+  #publish = ".next"
+  #command = "npm run build"  # or "pnpm run build" or "yarn build" depending on your package manager
+  #[build]
+  # Change to the correct base directory if needed
+  base = "astro"
+  # Publish directory should be .next or a custom distDir set in next.config.js
+  publish = "dist"
+  command = "pnpm run build" 
