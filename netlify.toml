@@ -1,12 +1,9 @@
 [build]
-# Base directory for monorepo
-base = "/"
+  # Change to the correct base directory if needed
+  base = ""
+  # Publish directory should be .next or a custom distDir set in next.config.js
+  publish = ".next"
+  command = "npm run build"  # or "pnpm run build" or "yarn build" depending on your package manager
 
-# Astro configuration
-[build.astro]
-command = "pnpm --filter astro run build"
-publish = "astro/dist"
-
-# Next.js configuration
 [[plugins]]
-package = "@netlify/plugin-nextjs"
+  package = "@netlify/plugin-nextjs"
