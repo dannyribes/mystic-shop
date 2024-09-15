@@ -1,0 +1,12 @@
+[build]
+# Base directory for monorepo
+base = "/"
+
+# Astro configuration
+[build.astro]
+command = "pnpm --filter astro run build"
+publish = "astro/dist"
+
+# Next.js configuration
+[[plugins]]
+package = "@netlify/plugin-nextjs"
